@@ -5,74 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Size Chart</title>
     <style>
+        /* Basic CSS reset */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f0f0f0; /* Light grey */
             padding: 20px;
         }
+
+        /* Table styling */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
+            border: 2px solid #dddddd; /* Darker grey border around the table */
+            background-color: #ffffff; /* White background */
         }
+
         th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
+            border: 1px solid #dddddd; /* Light grey border for cells */
+            padding: 12px;
             text-align: center;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #f2f2f2; /* Light grey background for header cells */
+            font-weight: bold;
+        }
+
+        /* Alternate row background color for better readability */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey background for even rows */
+        }
+
+        /* Hover effect on rows */
+        tbody tr:hover {
+            background-color: #e6f7ff; /* Light blue background on hover */
         }
     </style>
 </head>
 <body>
-
-    <h1>Myntra Size Chart</h1>
-
+    <h2>Myntra Size Chart</h2>
+    
     <table>
         <thead>
             <tr>
                 <th>Size</th>
-                <th>Bust (inches)</th>
-                <th>Waist (inches)</th>
-                <th>Hip (inches)</th>
+                <th>Bust (in cm)</th>
+                <th>Waist (in cm)</th>
+                <th>Hip (in cm)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>XS</td>
-                <td>32</td>
-                <td>24</td>
-                <td>34</td>
+                <td>76-81</td>
+                <td>56-61</td>
+                <td>84-89</td>
             </tr>
             <tr>
                 <td>S</td>
-                <td>34</td>
-                <td>26</td>
-                <td>36</td>
+                <td>81-86</td>
+                <td>61-66</td>
+                <td>89-94</td>
             </tr>
             <tr>
                 <td>M</td>
-                <td>36</td>
-                <td>28</td>
-                <td>38</td>
+                <td>86-91</td>
+                <td>66-71</td>
+                <td>94-99</td>
             </tr>
             <tr>
                 <td>L</td>
-                <td>38</td>
-                <td>30</td>
-                <td>40</td>
+                <td>91-96</td>
+                <td>71-76</td>
+                <td>99-104</td>
             </tr>
             <tr>
                 <td>XL</td>
-                <td>40</td>
-                <td>32</td>
-                <td>42</td>
+                <td>96-101</td>
+                <td>76-81</td>
+                <td>104-109</td>
             </tr>
         </tbody>
     </table>
-
 </body>
 </html>
