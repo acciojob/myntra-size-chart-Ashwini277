@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Size Chart</title>
     <style>
-        /* Optional CSS styling for the table */
+        /* Optional CSS styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light grey */
+            background-color: #f0f0f0; /* Light grey background */
             padding: 20px;
         }
         
@@ -16,19 +16,22 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-        }
-        
-        table, th, td {
-            border: 1px solid #dddddd;
+            border: 1px solid #dddddd; /* Light grey border */
+            background-color: #ffffff; /* White background */
         }
         
         th, td {
+            border: 1px solid #dddddd; /* Light grey border */
             padding: 10px;
             text-align: center;
         }
         
         th {
-            background-color: #f2f2f2; /* Light grey */
+            background-color: #f2f2f2; /* Light grey background for header */
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey background for even rows */
         }
     </style>
 </head>
@@ -72,10 +75,4 @@
             <tr>
                 <td>XL</td>
                 <td>96-101</td>
-                <td>76-81</td>
-                <td>104-109</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+                <td>76
